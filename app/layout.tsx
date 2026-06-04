@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import {
-  DATE_MODIFIED,
-  DATE_PUBLISHED,
+  DATE_ISO_MODIFIED,
+  DATE_ISO_PUBLISHED,
   LP_DEPLOY_URL,
   PROFILE_IMAGE_PATH,
 } from "@/lib/site";
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
     images: [`${LP_DEPLOY_URL}${PROFILE_IMAGE_PATH}`],
   },
   other: {
-    "article:published_time": DATE_PUBLISHED,
-    "article:modified_time": DATE_MODIFIED,
+    "article:published_time": DATE_ISO_PUBLISHED,
+    "article:modified_time": DATE_ISO_MODIFIED,
   },
 };
 
