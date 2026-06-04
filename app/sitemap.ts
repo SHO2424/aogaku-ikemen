@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const LP_DEPLOY_URL = "https://aogaku-ikemen.vercel.app/";
+import { LP_DEPLOY_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
