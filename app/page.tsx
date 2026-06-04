@@ -1,4 +1,5 @@
 import { MessageCircleQuestion, Terminal, Code2, Briefcase } from "lucide-react";
+import { DATE_ISO_MODIFIED, DATE_ISO_PUBLISHED } from "@/lib/site";
 
 const MY_PORTFOLIO_URL = "https://aogaku-ikemen.vercel.app/";
 const WANTEDLY_URL = "https://www.wantedly.com/id/monk";
@@ -105,6 +106,23 @@ export default function ShoeiAkiwaPortfolio() {
                   青山学院大学 経営学部経営学科
                   <br />
                   ソフトウェアエンジニア
+                </p>
+                <p className="mt-4 border-t border-slate-800 pt-4 text-xs text-slate-400">
+                  公開日:{" "}
+                  <time
+                    dateTime={DATE_ISO_PUBLISHED}
+                    className="tabular-nums text-slate-300"
+                  >
+                    {DATE_ISO_PUBLISHED}
+                  </time>
+                  {" / "}
+                  最終更新日:{" "}
+                  <time
+                    dateTime={DATE_ISO_MODIFIED}
+                    className="tabular-nums text-slate-300"
+                  >
+                    {DATE_ISO_MODIFIED}
+                  </time>
                 </p>
               </header>
             </div>

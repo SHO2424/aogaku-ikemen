@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const SITE_URL = "https://aogaku-ikemen.vercel.app/";
+import { LP_DEPLOY_URL as SITE_URL } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
