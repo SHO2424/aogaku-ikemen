@@ -1,7 +1,6 @@
 import { MessageCircleQuestion, Terminal, Code2, Briefcase } from "lucide-react";
 
-// ▼ 後で自分の本番URLやSNSのURLに書き換えてください ▼
-const MY_PORTFOLIO_URL = "https://your-domain.vercel.app/";
+const MY_PORTFOLIO_URL = "https://aogaku-ikemen.vercel.app/";
 const WANTEDLY_URL = "https://www.wantedly.com/id/monk";
 const X_URL = "https://x.com/AkiwaShoei66377";
 const INSTAGRAM_URL = "https://www.instagram.com/monk_0920/"; 
